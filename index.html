@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>Date Invitation from Yyagya❣️</title>
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+	<!-- final content wrapper: shown only in final state -->
+	<div class="final-content">
+		<img class="final-cat" id="finalCat" src="assets/images/cats-couple.png" alt="Two cats cuddling with a heart">
+		<p class="page-heading" id="finalHeading">A date invitation, from ME to YOU ❣️</p>
+	</div>
+
+	<div class="invite-wrapper">
+		<img class="frame-img" src="assets/images/frame.png" alt="" aria-hidden="true">
+
+		<div class="card" id="inviteCard">
+			<h1>Date<br>Invitation</h1>
+			<p class="the-date" id="dateDisplay"></p>
+
+			<img class="cats-couple" src="assets/images/cats-couple.png" alt="Two cats cuddling with a heart">
+
+			<p class="invite-msg">My Lady Knight🤺, I would<br>love to invite you on a date.&hellip;</p>
+
+			<div class="box-group" id="boxGroup">
+				<div class="box-item yes" id="yesItem">
+					<div class="box"></div>
+					<span>YES!</span>
+				</div>
+				<div class="box-item no-placeholder" aria-hidden="true">
+					<div class="box"></div>
+					<span>NO!</span>
+				</div>
+				<div class="box-item no" id="noBtn">
+					<div class="box"></div>
+					<span>NO!</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Popup -->
+	<div class="popup-screen" id="popupScreen">
+		<div class="popup-card">
+			<div class="stage active" id="stageYes">
+				<span class="heart-emoji">💖</span>
+				<h2 class="popup-title">I'm so excited!</h2>
+				<p class="popup-text">Mark the calendar &mdash; our date is happening. 🎉</p>
+			</div>
+			<div class="stage" id="stageCycle">
+				<p class="cycle-text">I'm on my way to pick you up! <span class="cycle-emoji">🚲</span></p>
+				<p class="cycle-sub">Get ready &mdash; see you very soon 💕</p>
+				<div class="road" id="road">
+					<img class="cyclist" src="assets/images/cyclist.png" alt="Me, cycling over to pick you up">
+				</div>
+				<button class="close-btn" id="closeBtn" type="button">Can't wait to see you! 💌</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
